@@ -11,7 +11,7 @@ const employees = require('./models/employees');
 
 // How to connect to the database either via heroku or locally
 const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/inhousehrapp';
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/hrapp';
 // Connect to Mongo
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
   console.log('connected to mongo database');
@@ -32,10 +32,7 @@ app.get('/employees', (req, res) => {
   //   res.send('app is running!');
   res.render('index.ejs', { employees: employees });
 });
-app.get('/employees/', (req, res) => {
-  //   res.send('app is running!');
-  res.render('index1.ejs', { employees: employees });
-});
+
 // add a new hire
 app.get('/employees/new', (req, res) => {
   res.render('new.ejs');

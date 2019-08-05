@@ -4,7 +4,7 @@ module.exports = [
     lastname: 'Les',
     dob: 1998,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62468842-067dd300-b765-11e9-90d6-82dcfd1e50fd.jpg',
     address: 'Stamford',
     phone: '203-111-1111',
     email: 'ceo@gmail.com',
@@ -24,7 +24,7 @@ module.exports = [
     lastname: 'Smith',
     dob: 2001,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62466787-28c12200-b760-11e9-9156-b1d3484ac0e8.jpeg',
     address: 'Norwalk',
     phone: '203-111-2222',
     email: 'as@gmail.com',
