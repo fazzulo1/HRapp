@@ -1,0 +1,49 @@
+body {
+  background: blanchedalmond;
+}
+h1 {
+  text-align: center;
+  background: steelblue;
+  margin: 0 auto;
+  padding: 20px;
+  color: blanchedalmond;
+}
+input {
+  margin: 1%;
+  width: 18%;
+}
+input:focus {
+  background: lightgreen;
+}
+input[type='submit'] {
+  text-align: center;
+  display: block;
+  margin: 4% auto;
+  font-size: larger;
+  background: steelblue;
+  color: blanchedalmond;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25%;
+}
+input[type='submit']:hover {
+  background: lightgreen;
+  cursor: pointer;
+  color: steelblue;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  background: steelblue;
+  color: blanchedalmond;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: lightgreen;
+  color: steelblue;
+}

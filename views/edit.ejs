@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Edit Employee Data</title>
+    <link rel="stylesheet" href="/css/new.css" />
+  </head>
+  <h1>EDIT EMPLOYEE DATA</h1>
+  <form action="/employees/<%=index%>?_method=PUT" method="POST">
+    <h2>Demographic data</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="<%=employee.name%>" />
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname"
+    name="lastname"value="<%=employee.lastname%>"" />
+    <label for="dob">DOB:</label>
+    <input type="text" id="dob" name="dob"value="<%=employee.dob%>"" />
+    <label for="img">Image:</label>
+    <input type="text" id="img" name="img" value="<%=employee.img%>"" />
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address"
+    value="<%=employee.address%>"" />
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" value="<%=employee.phone%>" />
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" value="<%=employee.email%>" />
+    <h2>Functional Data</h2>
+    <label for="department">Department:</label>
+    <input
+      type="text"
+      id="department"
+      name="department"
+      value="<%=employee.department%>"
+    />
+    <label for="supervisor">Supervisor:</label>
+    <input
+      type="text"
+      id="supervisor"
+      name="supervisor"
+      value="<%=employee.supervisor%>"
+    />
+    <label for="job">Job:</label>
+    <input type="text" id="job" name="job" value="<%=employee.job%>"" />
+    <label for="job_description">Job Description:</label>
+    <input
+      type="text"
+      id="job_description"
+      name="job_description"
+      value="<%=employee.job_description%>"
+    />
+    <label for="office">Office:</label>
+    <input type="text" id="office" name="office" value="<%=employee.office%>" />
+    <h2>Compensation data</h2>
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary" value="<%=employee.salary%>" />
+    <label for="bonus">Bonus:</label>
+    <input type="text" id="bonus" name="bonus" value="<%=employee.bonus%>"" />
+    <label for="vacation">Vacation</label>
+    <input
+      type="text"
+      id="vacation"
+      name="vacation"
+      value="<%=employee.vacation%>"
+    />
+    <label for="skills">Skills</label>
+    <input type="text" id="skills" name="skills" value="<%=employee.skills%>" />
+    <br />
+    <!-- <a href="/employees"> -->
+    <input type="submit" value="CLICK to EDIT EMPLOYEE DATA" />
+    <!-- </a> -->
+  </form>
+  <a href="/employees"><button>BACK to EMPLOYEE DIRECTORY</button> </a>
+
+  <body></body>
+</html>

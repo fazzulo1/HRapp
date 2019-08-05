@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Add a New Hired Employee</title>
+    <link rel="stylesheet" href="/css/new.css" />
+  </head>
+  <h1>Add a NEW HIRE</h1>
+  <form action="/employees" method="POST">
+    <h2>Demographic data</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" />
+    <label for="dob">DOB:</label>
+    <input type="text" id="dob" name="dob" />
+    <label for="img">Image:</label>
+    <input type="text" id="img" name="img" />
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" />
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" />
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" />
+    <h2>Functional Data</h2>
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" />
+    <label for="supervisor">Supervisor:</label>
+    <input type="text" id="supervisor" name="supervisor" />
+    <label for="job">Job:</label>
+    <input type="text" id="job" name="job" />
+    <label for="job_description">Job Description:</label>
+    <input type="text" id="job_description" name="job_description" />
+    <label for="office">Office:</label>
+    <input type="text" id="office" name="office" />
+    <h2>Compensation data</h2>
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary" />
+    <label for="bonus">Bonus:</label>
+    <input type="text" id="bonus" name="bonus" />
+    <label for="vacation">Vacation</label>
+    <input type="text" id="vacation" name="vacation" />
+    <label for="skills">Skills</label>
+    <input type="text" id="skills" name="skills" />
+    <br />
+    <a href="/employees">
+      <input type="submit" value="CLICK to ADD NEW HIRE" />
+    </a>
+  </form>
+  <a href="/employees"><button>BACK to EMPLOYEE DIRECTORY</button> </a>
+  <body></body>
+</html>
