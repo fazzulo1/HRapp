@@ -1,4 +1,6 @@
-module.exports = [
+const Employee = require('../../models/employeeModel');
+
+const employeeData = [
   {
     name: 'Paul',
     lastname: 'Les',
@@ -181,4 +183,11 @@ module.exports = [
   }
 ];
 
-// module.exports = employees;
+const seedDb = () => {
+  Employee.insertMany(employeeData, (err, collection) => {
+    if (err) console.log(err);
+    console.log('Seeded', collection);
+  });
+};
+
+seedDb();

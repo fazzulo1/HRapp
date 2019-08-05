@@ -10,7 +10,7 @@
   <body>
     <h1>Employees Directory</h1>
     <nav>
-      <a href="/employees/"><button>CLICK to ADD NEW HIRE</button> </a>
+      <a href="/employees/new"><button>CLICK to ADD NEW HIRE</button> </a>
     </nav>
     <div class="other">
       <h2>Departments</h2>
@@ -39,10 +39,13 @@
           <h5>Office: <%=employe.office%></h5>
           <h5>Phone: <%=employe.phone%></h5>
           <h5>Email: <%=employe.email%></h5>
-          <form action="/employees/<%=index%>?_method=DELETE" method="POST">
+          <form
+            action="/employees/<%=employe.id%>?_method=DELETE"
+            method="POST"
+          >
             <input class="delete" type="submit" value="DELETE" />
           </form>
-          <a class="edit" href="/employees/<%=index%>/edit"
+          <a class="edit" href="/employees/<%=employe.id%>/edit"
             ><input class="toedit" type="submit" value="EDIT"
           /></a>
         </div>
