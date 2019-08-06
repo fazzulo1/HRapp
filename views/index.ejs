@@ -26,12 +26,12 @@
       <%employees.forEach((employe, index)=>{%>
       <div class="empl">
         <div class="one">
-          <a href="/employees/<%=index%>">
+          <a href="/employees/<%=employe.id%>">
             <img src="<%=employe.img%>" alt=""
           /></a>
         </div>
         <div class="two">
-          <a href="/employees/<%=index%>">
+          <a href="/employees/<%=employe.id%>">
             <h3><%=employe.name%> <span><%=employe.lastname%></span></h3></a
           >
           <h5>Job: <%=employe.job%></h5>

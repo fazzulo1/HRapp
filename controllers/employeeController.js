@@ -20,11 +20,10 @@ router.get('/new', (req, res) => {
 router.get('/:id/edit', (req, res) => {
   Employee.findById(req.params.id, (err, foundEmployee) => {
     //find the employee
-    console.log(foundEmployee);
+    // console.log(foundEmployee);
     res.render('edit.ejs', {
       employee: foundEmployee, //pass in found employee
-
-      index: req.params.id // NOT SURE
+      index: req.params.id
     });
   });
 });
@@ -39,10 +38,7 @@ router.get('/:id', (req, res) => {
 // create
 router.post('/', (req, res) => {
   Employee.create(req.body, (error, createdEmployee) => {
-    // res.send(createdEmployee); // JUST ADDED
-    // Employee.create(req.body, () => {
     res.redirect('/employees');
-    // });
   });
 });
 
