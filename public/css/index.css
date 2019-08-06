@@ -2,7 +2,9 @@ body {
   overflow: auto;
   color: #4682b4;
   background: blanchedalmond;
+  margin: 0px;
 }
+
 .other {
   width: 15%;
   height: auto;
@@ -13,8 +15,9 @@ body {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  flex-basis: 79%;
-  margin-top: 0px;
+  justify-content: start;
+  margin: 0px;
+  width: 80%;
 }
 h1 {
   text-align: center;
@@ -48,13 +51,15 @@ h3,
 h5 {
   text-align: left;
   margin: 5%;
+  font-size: 13px;
 }
 .empl {
   width: 32%;
-  height: 90%;
+  height: 220px;
   border: 1px solid black;
   margin: 0% 0.5%;
   background: white;
+  /* overflow: auto; */
 }
 .one {
   float: left;
@@ -70,7 +75,7 @@ h5 {
 }
 img {
   width: 100%;
-  height: auto;
+  height: 80%;
 }
 form {
   display: inline-block;
@@ -103,4 +108,69 @@ a:visited {
 }
 a:hover h3 {
   color: lightgreen;
+}
+/* input {
+  width: 90%;
+} */
+@media screen and (max-width: 600px) {
+  .empl {
+    width: 48%;
+    height: 150px;
+  }
+  h2,
+  h3,
+  h5 {
+    color: steelblue;
+    font-size: 5px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  h2,
+  h3,
+  h5 {
+    color: steelblue;
+    font-size: 5px;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  .empl {
+    width: 48%;
+    height: 190px;
+  }
+  h2,
+  h3,
+  h5 {
+    color: steelblue;
+    font-size: 5px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1367px) and (min-width: 900px) {
+  .empl {
+    width: 32.05%;
+    height: 205px;
+  }
+  h2,
+  h3,
+  h5 {
+    color: steelblue;
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .empl {
+    width: 32.3%;
+    height: 265px;
+  }
 }

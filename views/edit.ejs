@@ -5,82 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Edit Employee Data</title>
-    <link rel="stylesheet" href="/css/new.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/edit.css" />
   </head>
   <h1>EDIT EMPLOYEE DATA</h1>
+  <div class="img"><img src="<%=employee.img%>" alt="" /></div>
+  <div class="container">
+    <form action="/employees/<%=index%>?_method=PUT" method="POST">
+      <div class="content">
+        <h2>PERSONAL</h2>
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value="<%=employee.name%>"
+        /><br />
+        <label for="lastname">Last Name:</label><br />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          value="<%=employee.lastname%>"
+        /><br />
+        <label for="dob">DOB:</label><br />
+        <input
+          type="number"
+          id="dob"
+          name="dob"
+          value="<%=employee.dob%>"
+        /><br />
+        <label for="img">Image:</label><br />
+        <input
+          type="text"
+          id="img"
+          name="img"
+          value="<%=employee.img%>"
+        /><br />
+        <label for="address">Address:</label><br />
+        <input
+          type="text"
+          id="address"
+          name="address"
+          value="<%=employee.address%>"
+        /><br />
+        <label for="phone">Phone:</label><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          value="<%=employee.phone%>"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          value="<%=employee.email%>"
+        /><br />
+      </div>
+      <div class="content">
+        <h2>FUNCTION</h2>
+        <label for="department">Department:</label><br />
+        <input
+          type="text"
+          id="department"
+          name="department"
+          value="<%=employee.department%>"
+        /><br />
+        <label for="supervisor">Supervisor:</label><br />
+        <input
+          type="text"
+          id="supervisor"
+          name="supervisor"
+          value="<%=employee.supervisor%>"
+        /><br />
+        <label for="job">Job:</label><br />
+        <input
+          type="text"
+          id="job"
+          name="job"
+          value="<%=employee.job%>"
+        /><br />
+        <label for="job_description">Job Description:</label><br />
+        <input
+          type="text"
+          id="job_description"
+          name="job_description"
+          value="<%=employee.job_description%>"
+        /><br />
+        <label for="office">Office:</label><br />
+        <input
+          type="text"
+          id="office"
+          name="office"
+          value="<%=employee.office%>"
+        /><br />
+      </div>
+      <div class="content">
+        <h2>COMPENSATION</h2>
+        <label for="salary">Salary:</label><br />
+        <input
+          type="text"
+          id="salary"
+          name="salary"
+          value="<%=employee.salary%>"
+        /><br />
+        <label for="bonus">Bonus:</label><br />
+        <input
+          type="text"
+          id="bonus"
+          name="bonus"
+          value="<%=employee.bonus%>"
+        /><br />
+        <label for="vacation">Vacation</label><br />
+        <input
+          type="text"
+          id="vacation"
+          name="vacation"
+          value="<%=employee.vacation%>"
+        /><br />
+        <label for="skills">Skills</label><br />
+        <input
+          type="text"
+          id="skills"
+          name="skills"
+          value="<%=employee.skills%>"
+        /><br />
+      </div>
 
-  <form action="/employees/<%=index%>?_method=PUT" method="POST">
-    <h2>Demographic data</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" value="<%=employee.name%>" />
-    <label for="lastname">Last Name:</label>
-    <input
-      type="text"
-      id="lastname"
-      name="lastname"
-      value="<%=employee.lastname%>"
-    />
-    <label for="dob">DOB:</label>
-    <input type="number" id="dob" name="dob" value="<%=employee.dob%>" />
-    <label for="img">Image:</label>
-    <input type="text" id="img" name="img" value="<%=employee.img%>" />
-    <label for="address">Address:</label>
-    <input
-      type="text"
-      id="address"
-      name="address"
-      value="<%=employee.address%>"
-    />
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" name="phone" value="<%=employee.phone%>" />
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" value="<%=employee.email%>" />
-    <h2>Functional Data</h2>
-    <label for="department">Department:</label>
-    <input
-      type="text"
-      id="department"
-      name="department"
-      value="<%=employee.department%>"
-    />
-    <label for="supervisor">Supervisor:</label>
-    <input
-      type="text"
-      id="supervisor"
-      name="supervisor"
-      value="<%=employee.supervisor%>"
-    />
-    <label for="job">Job:</label>
-    <input type="text" id="job" name="job" value="<%=employee.job%>" />
-    <label for="job_description">Job Description:</label>
-    <input
-      type="text"
-      id="job_description"
-      name="job_description"
-      value="<%=employee.job_description%>"
-    />
-    <label for="office">Office:</label>
-    <input type="text" id="office" name="office" value="<%=employee.office%>" />
-    <h2>Compensation data</h2>
-    <label for="salary">Salary:</label>
-    <input type="text" id="salary" name="salary" value="<%=employee.salary%>" />
-    <label for="bonus">Bonus:</label>
-    <input type="text" id="bonus" name="bonus" value="<%=employee.bonus%>" />
-    <label for="vacation">Vacation</label>
-    <input
-      type="text"
-      id="vacation"
-      name="vacation"
-      value="<%=employee.vacation%>"
-    />
-    <label for="skills">Skills</label>
-    <input type="text" id="skills" name="skills" value="<%=employee.skills%>" />
-    <br />
-    <!-- <a href="/employees"> -->
-    <input type="submit" value="CLICK to EDIT EMPLOYEE DATA" />
-    <!-- </a> -->
-  </form>
-  <a href="/employees"><button>BACK to EMPLOYEE DIRECTORY</button> </a>
+      <br />
+      <!-- <a href="/employees"> -->
+      <input type="submit" value="CLICK TO EDIT " />
+      <!-- </a> -->
+    </form>
+  </div>
+  <a href="/employees"><button>BACK TO EMPLOYEE DATABASE</button> </a>
 
   <body></body>
 </html>

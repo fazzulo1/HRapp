@@ -126,7 +126,7 @@ const employeeData = [
     lastname: 'James',
     dob: 1985,
     img:
-      'https://user-images.githubusercontent.com/51187016/62546061-d00d8a00-b830-11e9-8b12-6eedb8ce6e33.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
     address: 'Stamford',
     phone: '203-111-4411',
     email: 'jj@gmail.com',
