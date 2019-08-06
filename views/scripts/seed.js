@@ -46,7 +46,7 @@ const employeeData = [
     lastname: 'Williams',
     dob: 2000,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62545234-545f0d80-b82f-11e9-8739-272dd93922da.jpeg',
     address: 'Bridgeport',
     phone: '203-111-3333',
     email: 'johnh@gmail.com',
@@ -86,7 +86,7 @@ const employeeData = [
     lastname: 'Louis',
     dob: 1980,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'e10](https://user-images.githubusercontent.com/51187016/62545533-e23af880-b82f-11e9-819a-620e34ce3276.jpeg',
     address: 'Darien',
     phone: '203-111-1221',
     email: 'peter@gmail.com',
@@ -106,7 +106,7 @@ const employeeData = [
     lastname: 'Rodriguez',
     dob: 1985,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62544662-3a70fb00-b82e-11e9-93d3-293d3ccc01ec.jpeg',
     address: 'Stamford',
     phone: '203-111-4411',
     email: 'wr@gmail.com',
@@ -126,7 +126,7 @@ const employeeData = [
     lastname: 'James',
     dob: 1985,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62546061-d00d8a00-b830-11e9-8b12-6eedb8ce6e33.jpeg',
     address: 'Stamford',
     phone: '203-111-4411',
     email: 'jj@gmail.com',
@@ -146,7 +146,7 @@ const employeeData = [
     lastname: 'Craft',
     dob: 1985,
     img:
-      'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
+      'https://user-images.githubusercontent.com/51187016/62544849-891e9500-b82e-11e9-87c3-d1b878983aea.jpeg',
     address: 'Stamford',
     phone: '203-111-4411',
     email: 'lc@gmail.com',
