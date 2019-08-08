@@ -6,7 +6,7 @@ const Employee = require('../models/employeeModel');
 // index
 router.get('/', (req, res) => {
   Employee.find({}, (error, allEmployees) => {
-    if (err) console.log('Find Collection Error:', err);
+    if (error) console.log('Find Collection Error:', error);
     res.render('index.ejs', {
       employees: allEmployees
     });
