@@ -10,6 +10,7 @@ body {
   height: auto;
   float: left;
   background: blanchedalmond;
+  padding-left: 1%;
 }
 .container {
   display: flex;
@@ -23,7 +24,7 @@ h1 {
   text-align: center;
   background: steelblue;
   margin: 0 auto;
-  padding: 1%;
+  padding-top: 1%;
   color: blanchedalmond;
 }
 nav {
@@ -45,7 +46,9 @@ button:hover {
   cursor: pointer;
 }
 h2 {
-  color: black;
+  color: steelblue;
+  font-size: 16px;
+  padding-left: 7px;
 }
 h3,
 h5 {
@@ -106,18 +109,20 @@ a,
 a:visited {
   color: inherit;
 }
-a:hover h3 {
+a:hover h2 {
   color: lightgreen;
 }
 /* input {
   width: 90%;
 } */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .empl {
     width: 48%;
     height: 150px;
   }
-  h2,
+  h2 {
+    font-size: 11px;
+  }
   h3,
   h5 {
     color: steelblue;
@@ -129,8 +134,10 @@ a:hover h3 {
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-  h2,
+@media screen and (max-width: 900px) and (min-width: 550px) {
+  h2 {
+    font-size: 14px;
+  }
   h3,
   h5 {
     color: steelblue;
@@ -145,7 +152,9 @@ a:hover h3 {
     width: 48%;
     height: 190px;
   }
-  h2,
+  h2 {
+    font-size: 16px;
+  }
   h3,
   h5 {
     color: steelblue;
@@ -156,12 +165,28 @@ a:hover h3 {
     width: 75%;
   }
 }
-@media screen and (max-width: 1367px) and (min-width: 900px) {
+@media screen and (max-width: 725px) and (min-width: 550px) {
+  .empl {
+    width: 48%;
+    height: 250px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3,
+  h5 {
+    color: steelblue;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 930 px) and (min-width: 725px) {
   .empl {
     width: 32.05%;
-    height: 205px;
+    height: 235px;
   }
-  h2,
+  h2 {
+    font-size: 16px;
+  }
   h3,
   h5 {
     color: steelblue;

@@ -4,7 +4,7 @@ const employeeData = [
   {
     name: 'Paul',
     lastname: 'Les',
-    dob: 1998,
+    dob: '01-01-1978',
     img:
       'https://user-images.githubusercontent.com/51187016/62468842-067dd300-b765-11e9-90d6-82dcfd1e50fd.jpg',
     address: 'Stamford',
@@ -24,7 +24,7 @@ const employeeData = [
   {
     name: 'Ann',
     lastname: 'Smith',
-    dob: 2001,
+    dob: '01-01-1988',
     img:
       'https://user-images.githubusercontent.com/51187016/62466787-28c12200-b760-11e9-9156-b1d3484ac0e8.jpeg',
     address: 'Norwalk',
@@ -44,7 +44,7 @@ const employeeData = [
   {
     name: 'John',
     lastname: 'Williams',
-    dob: 2000,
+    dob: '01-01-1978',
     img:
       'https://user-images.githubusercontent.com/51187016/62545234-545f0d80-b82f-11e9-8739-272dd93922da.jpeg',
     address: 'Bridgeport',
@@ -64,7 +64,7 @@ const employeeData = [
   {
     name: 'Mary',
     lastname: 'Perez',
-    dob: 1999,
+    dob: '01-01-1988',
     img:
       'https://user-images.githubusercontent.com/51187016/62544156-40b2a780-b82d-11e9-80d8-8c0aace33d05.jpeg',
     address: 'New Haven',
@@ -84,7 +84,7 @@ const employeeData = [
   {
     name: 'Peter',
     lastname: 'Louis',
-    dob: 1980,
+    dob: '01-01-1987',
     img:
       'e10](https://user-images.githubusercontent.com/51187016/62545533-e23af880-b82f-11e9-819a-620e34ce3276.jpeg',
     address: 'Darien',
@@ -104,7 +104,7 @@ const employeeData = [
   {
     name: 'Wendy',
     lastname: 'Rodriguez',
-    dob: 1985,
+    dob: '01-01-1977',
     img:
       'https://user-images.githubusercontent.com/51187016/62544662-3a70fb00-b82e-11e9-93d3-293d3ccc01ec.jpeg',
     address: 'Stamford',
@@ -124,7 +124,7 @@ const employeeData = [
   {
     name: 'Jim',
     lastname: 'James',
-    dob: 1985,
+    dob: '01-01-1968',
     img:
       'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
     address: 'Stamford',
@@ -144,7 +144,7 @@ const employeeData = [
   {
     name: 'Lana',
     lastname: 'Craft',
-    dob: 1985,
+    dob: '01-01-1985',
     img:
       'https://user-images.githubusercontent.com/51187016/62544849-891e9500-b82e-11e9-87c3-d1b878983aea.jpeg',
     address: 'Stamford',
@@ -164,7 +164,7 @@ const employeeData = [
   {
     name: 'Will',
     lastname: 'Willis',
-    dob: 1985,
+    dob: '01-01-1984',
     img:
       'https://user-images.githubusercontent.com/51187016/62398367-8712b880-b546-11e9-8ce3-1105d52dfa9d.jpeg',
     address: 'Stamford',
