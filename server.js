@@ -23,9 +23,9 @@ const MONGODB_URI =
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true }, () => {
   console.log('connected to mongo database');
 });
-mongoose.connection.once('open', () => {
-  console.log('connected to mongo');
-});
+// mongoose.connection.once('open', () => {
+//   console.log('connected to mongo');
+// });
 
 //Listener
 app.listen(PORT, () => console.log('Listening on port:', PORT));
