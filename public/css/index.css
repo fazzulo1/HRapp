@@ -47,14 +47,14 @@ button:hover {
 }
 h2 {
   color: steelblue;
-  font-size: 16px;
+  font-size: 15px;
   padding-left: 7px;
 }
-h3,
+
 h5 {
   text-align: left;
   margin: 5%;
-  font-size: 13px;
+  font-size: 12px;
 }
 .empl {
   width: 32%;
@@ -115,15 +115,15 @@ a:hover h2 {
 /* input {
   width: 90%;
 } */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .empl {
     width: 48%;
     height: 150px;
   }
   h2 {
-    font-size: 11px;
+    font-size: 9px;
   }
-  h3,
+
   h5 {
     color: steelblue;
     font-size: 5px;
@@ -134,14 +134,14 @@ a:hover h2 {
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 550px) {
+@media screen and (max-width: 800px) and (min-width: 700px) {
   h2 {
-    font-size: 14px;
+    font-size: 12px;
   }
-  h3,
+
   h5 {
     color: steelblue;
-    font-size: 5px;
+    font-size: 8px;
   }
 
   .container {
@@ -150,12 +150,12 @@ a:hover h2 {
 
   .empl {
     width: 48%;
-    height: 190px;
+    height: 170px;
   }
   h2 {
     font-size: 16px;
   }
-  h3,
+
   h5 {
     color: steelblue;
     font-size: 5px;
@@ -165,37 +165,24 @@ a:hover h2 {
     width: 75%;
   }
 }
-@media screen and (max-width: 725px) and (min-width: 550px) {
+
+@media screen and (max-width: 930px) and (min-width: 800px) {
   .empl {
     width: 48%;
-    height: 250px;
+    height: 200px;
   }
   h2 {
-    font-size: 16px;
-  }
-  h3,
-  h5 {
-    color: steelblue;
     font-size: 13px;
   }
-}
-@media screen and (max-width: 930 px) and (min-width: 725px) {
-  .empl {
-    width: 32.05%;
-    height: 235px;
-  }
-  h2 {
-    font-size: 16px;
-  }
-  h3,
+
   h5 {
     color: steelblue;
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 1400px) {
   .empl {
-    width: 32.3%;
-    height: 265px;
+    width: 48%;
+    height: 285px;
   }
 }

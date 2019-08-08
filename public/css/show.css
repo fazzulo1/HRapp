@@ -1,0 +1,135 @@
+body {
+  overflow: auto;
+  color: steelblue;
+  background: blanchedalmond;
+}
+.one {
+  float: left;
+  width: 21%;
+  height: auto;
+  overflow: auto;
+}
+img {
+  width: 65%;
+  margin-left: 7%;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  flex-basis: 80%;
+  overflow: auto;
+  float: left;
+  width: 70%;
+}
+h1 {
+  text-align: center;
+  background: steelblue;
+  margin: 0 auto;
+  padding: 20px;
+  color: blanchedalmond;
+}
+h2 {
+  font-size: 16px;
+}
+h4 {
+  text-align: left;
+  margin: 4%;
+  font-size: 1em;
+}
+.empl {
+  width: 30%;
+  height: auto;
+  border: 1px solid black;
+  margin: 1%;
+  padding: 2px;
+  background: white;
+}
+
+footer {
+  overflow: auto;
+  clear: both;
+  text-align: center;
+}
+button {
+  background: steelblue;
+  color: blanchedalmond;
+  border-radius: 5px;
+}
+button:hover {
+  background: lightgreen;
+  color: steelblue;
+}
+@media screen and (max-width: 550px) {
+  img {
+    width: 100%;
+  }
+  .empl {
+    width: 48%;
+    height: 150px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  h4 {
+    font-size: 8px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+  img {
+    width: 100%;
+  }
+  .container {
+    width: 75%;
+  }
+
+  .empl {
+    width: 48%;
+    height: auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 725px) and (min-width: 550px) {
+  .empl {
+    width: 48%;
+    height: 250px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 930 px) and (min-width: 725px) {
+  .empl {
+    width: 32.05%;
+    height: 235px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .empl {
+    width: 30%;
+    height: 265px;
+  }
+}

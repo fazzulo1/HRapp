@@ -5,51 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Employee Page</title>
-    <style>
-      body {
-        overflow: auto;
-        color: steelblue;
-      }
-      .one {
-        float: left;
-        width: 21%;
-        height: auto;
-        overflow: auto;
-      }
-      img {
-        width: 100%;
-      }
-      .container {
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        flex-basis: 69%;
-        overflow: auto;
-      }
-      h1 {
-        text-align: center;
-        background: steelblue;
-        margin: 0 auto;
-        padding: 20px;
-        color: blanchedalmond;
-      }
-      h4 {
-        text-align: left;
-        margin: 4%;
-      }
-      .empl {
-        width: 30%;
-        height: auto;
-        border: 1px solid black;
-        margin: 1%;
-      }
-
-      footer {
-        overflow: auto;
-        clear: both;
-        text-align: center;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/show.css" />
   </head>
   <body>
     <h1>Employee Profile</h1>
@@ -59,7 +21,7 @@
     <div class="container">
       <div class="empl">
         <h2>Demographic Data</h2>
-        <h4><%=employee.name%> <span><%=employee.lastname%></span></h4>
+        <h4>Name: <%=employee.name%> <span><%=employee.lastname%></span></h4>
         <h4>DOB:<%=employee.dob%></h4>
         <h4>Home Address:<%=employee.address%></h4>
         <h4>Phone: <%=employee.phone%></h4>
@@ -82,7 +44,7 @@
       </div>
     </div>
     <footer>
-      <a href="/employees">Back to Employees Directory</a>
+      <a href="/employees"><button>Back to Employees Directory</button> </a>
     </footer>
   </body>
 </html>
