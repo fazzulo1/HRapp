@@ -191,3 +191,5 @@ const seedDb = () => {
 };
 
 seedDb();
+
+module.exports = employeeData;

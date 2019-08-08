@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const employeeSeeds = require('../views/scripts/seed');
 // MODEL
 const Employee = require('../models/employeeModel');
 
@@ -10,6 +11,13 @@ router.get('/', (req, res) => {
     res.render('index.ejs', {
       employees: allEmployees
     });
+  });
+});
+// to seed data
+router.get('/seed', (req, res) => {
+  Employee.create(employeeSeeds, (error, allEmployees) => {
+    if (error) console.log('Seeding error', error);
+    res.send(allEmployees);
   });
 });
 // new
