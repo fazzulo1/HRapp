@@ -1,5 +1,7 @@
 # Web App Name: HRapp
 
+https://user-images.githubusercontent.com/51187016/62780721-579f0700-ba84-11e9-99a4-26fe52dcc66e.png
+
 # Goal:
 
 # To create an employee database that coud be use by an HR Department or a small business owner in order to keep track of some importanrt employee information. The initial employee information included as part of the database are: Personal / demographics, functional / job specific and Compensation data.
