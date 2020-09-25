@@ -1,15 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const employeeSeeds = require('../views/scripts/seed');
+//const employeeSeeds = require('../views/scripts/seed');
 // MODEL
-const Employee = require('../models/employeeModel');
+// const Employee = require('../models/employeeModel');
 
 // index
 router.get('/', (req, res) => {
   Employee.find({}, (error, allEmployees) => {
     if (error) console.log('Find Collection Error:', error);
     res.render('index.ejs', {
-      employees: allEmployees
+      employees: allEmployees,
     });
   });
 });
@@ -32,7 +32,7 @@ router.get('/:id/edit', (req, res) => {
     // console.log(foundEmployee);
     res.render('edit.ejs', {
       employee: foundEmployee, //pass in found employee
-      index: req.params.id
+      index: req.params.id,
     });
   });
 });
@@ -40,7 +40,7 @@ router.get('/:id/edit', (req, res) => {
 router.get('/:id', (req, res) => {
   Employee.findById(req.params.id, (err, foundEmployee) => {
     res.render('show.ejs', {
-      employee: foundEmployee
+      employee: foundEmployee,
     });
   });
 });
